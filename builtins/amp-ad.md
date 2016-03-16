@@ -107,6 +107,7 @@ resources in AMP. It requires a `type` argument that select what ad network is d
 - [Revcontent](../ads/revcontent.md)
 - [TripleLift](../ads/triplelift.md)
 - [Teads](../ads/teads.md)
+- [FlexOneELEPHANT](../ads/f1e.md)
 
 ## Styling
 
