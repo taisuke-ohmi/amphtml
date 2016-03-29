@@ -21,14 +21,13 @@ limitations under the License.
 ```html
 <amp-ad width=300 height=250
     type="f1e"
-    src="https://demo.impact-ad.jp/jserver/SITE=AMPSITE/AREA=AMPAREA/AAMSZ=300X250/OENCJP=UTF8/">
+    data-domain="https://demo.impact-ad.jp"
+    data-target="/SITE=AMPSITE/AREA=AMPAREA/AAMSZ=300X250/OENCJP=UTF8" >
 </amp-ad>
 ```
 
 ## Configuration
 
-For semantics of configuration, please see ad network documentation.
-
 Supported parameters:
 
-- src. Value must start with `https:` and last must `/` 
+- data-domain must start with `https:` and last must not `/` 

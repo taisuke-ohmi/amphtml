@@ -14,15 +14,19 @@
  * limitations under the License.
  */
 
-import {writeScript, validateSrcPrefix, validateSrcContains} from '../src/3p';
+import {writeScript, validateSrcPrefix} from '../src/3p';
 
 /**
  * @param {!Window} global
  * @param {!Object} data
  */
-export function adtech(global, data) {
-  const src = data.src;
-  validateSrcPrefix('https:', src);
-  validateSrcContains('/addyn/', src);
-  writeScript(global, src);
+export function f1e(global, data) {
+  checkData(data, ['domain', 'target']);
+  var domain = data.domain;
+  var target = data.target;
+  validateSrcPrefix('https:', domain);
+  var rnd = Math.round(Math.random() * 100000000);
+  if (!impApid) var pid = Math.round(Math.random() * 100000000);
+  url = domain + '/jserver/acc_random=' + rnd + target + '/pageid=' + pid;
+  writeScript(global, url)
 }
