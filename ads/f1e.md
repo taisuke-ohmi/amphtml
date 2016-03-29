@@ -28,6 +28,7 @@ limitations under the License.
 
 ## Configuration
 
+
 Supported parameters:
 
-- data-domain must start with `https:` and last must not `/` 
+- data-domain must start with `https:`
