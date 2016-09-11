@@ -26,7 +26,7 @@ export function f1e(global, data) {
   var target = data.target;
   validateSrcPrefix('https:', domain);
   var rnd = Math.round(Math.random() * 100000000);
-  if (!impApid) var pid = Math.round(Math.random() * 100000000);
+  if (!pid) var pid = Math.round(Math.random() * 100000000);
   var url = domain + '/jserver/acc_random=' + rnd + target + '/pageid=' + pid;
   writeScript(global, url)
 }
